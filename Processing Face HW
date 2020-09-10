@@ -1,0 +1,46 @@
+void setup() {
+  size (640, 480);
+};
+
+void draw() {
+  drawHead(); 
+  drawLeftEye();
+  drawRightEye();
+   drawLips();
+
+  //255,192,203 is pink
+};
+
+void drawLeftEye() {
+
+  fill(255, 255, 255);
+  ellipse(56, 46, 105, 55); //eyewhite
+  fill(160, 82, 45); //iris color
+  ellipse(56, 46, 55, 55);
+  fill(0, 0, 0);
+  ellipse(56, 46, 20, 20);
+};
+
+void drawRightEye() {
+
+  fill(255, 255, 255);
+  ellipse(200, 46, 105, 55); //eyewhite
+  fill(160, 82, 45); //iris color
+  ellipse(200, 46, 55, 55);
+  fill(0, 0, 0);
+  ellipse(200, 46, 20, 20);
+};
+
+void drawHead() {
+
+  fill(255, 239, 213);
+  ellipse(250, 250, 300, 400);
+   //arc(width/2, height/2, 200, 200, -HALF_PI, HALF_PI); makes a filled arch
+   //https://forum.processing.org/two/discussion/4856/how-to-create-semi-circle 
+};
+
+void drawLips() {
+
+
+
+};
