@@ -51,4 +51,3 @@ void drawLips() {
   line(30, 75, 270, 75);
   
 };
-
