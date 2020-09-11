@@ -11,10 +11,12 @@ void setup() {
 
 void draw() {
   background(255,255,255);
-  x= x+1;// will keep moving along the x axis. 
+ // x= x+1;// will keep moving along the x axis. 
 
   rectMode(CENTER);
   fill(255, 0, 0);
+  x= mouseX;
+  y =mouseY;
   rect(x, y, 400, 400);
 
   fill(0, 255, 0);
