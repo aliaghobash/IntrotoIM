@@ -39,8 +39,16 @@ void drawHead() {
    //https://forum.processing.org/two/discussion/4856/how-to-create-semi-circle 
 };
 
+
 void drawLips() {
 
-
-
+  fill(255, 192, 203);
+  noStroke();
+  triangle(30, 75, 100, 20, 150, 75);
+  triangle(150, 75, 200, 20, 270, 75);
+  triangle(30, 75, 150, 150, 270, 75);
+  stroke(0,0,0);
+  line(30, 75, 270, 75);
+  
 };
+
