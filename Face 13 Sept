@@ -3,6 +3,7 @@ void setup() {
 };
 
 void draw() {
+hair()
   drawHead(); 
   drawLeftEye();
   drawRightEye();
@@ -102,4 +103,14 @@ int y2= 200;
 int height= 210;
 int width= 210;
 arc(320,110,height,width,6*PI/6,12*PI/6);
+};
+void hair() {
+  
+  fill(78, 53, 36);
+    int x1= 640;
+  int y1= 480;
+  ellipse(x1/2, y1/2, 400, 500);
+  //noStroke();
+  rect(x1/2-200,y1/2,400,500);
+  
 };
