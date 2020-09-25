@@ -1,0 +1,31 @@
+//https://youtu.be/Hb4sxTiZAW0
+float angle;
+float grid= 400;
+float i=0; 
+void setup() {
+  size(1080, 900,P3D);
+};
+
+void draw() {
+background(255); 
+
+  translate(mouseX,mouseY);
+rotateX(radians(angle));
+rotateY(radians(angle));
+i=0; 
+
+  beginShape();
+vertex(i+100,100);
+vertex(i+175,50);
+vertex(i+250,100);
+vertex(i+250,200);
+vertex(i+175,250);
+vertex(i+100,200);
+vertex(i+100,100);
+vertex(i+100,200);
+
+endShape();
+
+
+angle+=1; //does a full rotation
+};
