@@ -1,0 +1,43 @@
+Bubble b; 
+void setup() {
+  size(640, 360);
+  b = new Bubble(64); // b is a new instance a bubble object, Bubble() is a constructor.
+};
+void draw() {
+  background(255);
+    //backdrop();
+  b.top();
+  b.display();
+  b.ascend();//dot syntax, calling a function on that object.
+
+};
+
+//__________________
+class Bubble {
+  float x;
+  float y;
+  float diameter;
+
+  Bubble(float tempD) { 
+    x=width/2;
+    y=height/2;
+    diameter=tempD;
+  };
+
+  void display() {
+    stroke(0);
+    fill(127);
+    ellipse(x, y, diameter, diameter);
+  };
+
+  void top() {
+    if (y<diameter/2) {
+      y=diameter/2;
+    };
+  };
+  void ascend() {
+    y--;
+    x=x+random(-2, 2);
+  };
+};
+
