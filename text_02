@@ -1,0 +1,27 @@
+
+PFont myFont;
+float x = 100;
+float y = 40;
+
+void setup() {
+  size(400, 200);
+
+  myFont = createFont("FFScala", 24);
+  textFont(myFont);
+}
+
+void draw() {
+  background(255);
+  fill(0,0,0,60);
+  rect(0,0,width,height);
+  fill(255);
+  text("a", x, y);
+  x += x*0.01; //acceleration
+  //forming a half circle
+if(x>height){
+  //x -= x*0.01; //acceleration
+  y += y*0.01; //forming a half circle
+}else{ y -= y*0.01;};
+  
+
+}
