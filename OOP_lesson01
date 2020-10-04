@@ -1,7 +1,4 @@
-//lesson about arrays
-
-
-
+//Version 1
 float[] nums ={30, 40, 92, 50};//index is the address of the array, [0][1][2][3]
 void setup() {
   size(500, 400);
@@ -16,3 +13,27 @@ void draw() {
     ellipse(i*50+100, 200, nums[i], nums[i]);
   };
 };
+
+//Version 2____________________________________________________________________________________________________________
+
+int[] nums =new int[8];
+void setup() {
+  size(500, 400);
+
+  for (int i=0; i<nums.length; i++) {
+    nums[i]=int(random(10, 100));
+  };
+};
+void draw() {
+  background(0);
+  noFill();
+  stroke(255);
+  strokeWeight(5);
+  
+  for (int i=0; i<nums.length; i++) {
+    ellipse(i*50+100, 200, nums[i], nums[i]);
+  };
+};
+
+
+//Version 3____________________________________________________________________________________________________________
