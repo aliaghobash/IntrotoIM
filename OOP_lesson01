@@ -37,3 +37,18 @@ void draw() {
 
 
 //Version 3____________________________________________________________________________________________________________
+int[] nums= {1, 2, 3, 4};// 10 is how long //but index is 0 to 9
+
+String[] strings= {"a","b","c"};// 10 is how long //but index is 0 to 9
+//initialize
+
+int i=0;
+//action
+for (i=0; i<nums.length; i++) {
+  println(nums[i]);
+};
+ for (i=0; i<strings.length; i++) {
+      println(strings[i]);
+  };
+  
+//Version 4____________________________________________________________________________________________________________
