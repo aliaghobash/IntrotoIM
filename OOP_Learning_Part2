@@ -1,0 +1,23 @@
+float x;
+float y;
+void setup() {
+  size(640, 400);
+  rectMode(CENTER);
+  background(0);
+};
+void draw() {
+
+  rect(height/2, width/2, 900, 160);
+
+  ellipse(height/2+x, width/2+y, 50, 50);
+  y=y*0.05;
+  x=x+random(-5, 5);
+  if (x>width) {
+    x=x-1;
+  };
+};
+void  mousePressed() {
+  ellipse(height/2+x+50, width/2+50, 50, 50);
+   y=y*0.05;
+  x=x+random(-5, 5);
+};
