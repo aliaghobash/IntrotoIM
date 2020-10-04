@@ -1,0 +1,25 @@
+int spacing; 
+int size; 
+void setup() {
+
+  size(640, 400);
+};
+void draw() {
+
+
+  noFill();
+  //spacing= 25;
+  //size=50;
+
+//ellipse(width/2-25,height/2,50,50);
+  for (int i=0; i<width; i+=100) {
+   arc(320, 200, 100+i, 100+i, radians(180), radians(360) );
+     arc(320-25, 200, 100*1.5+i, 100*1.5+i, radians(0), radians(180) );
+    //arc(320-spacing, 200, 100+ size, 100+size, radians(0),radians(180) );
+    //arc(320-spacing, 200, 100+ size*3, 100+size*3, radians(0),radians(180) );
+    //arc(320-spacing, 200, 100+ size*5, 100+size*5, radians(0),radians(180) );
+  };
+ // for (int i=0; i<width; i++) {
+ //arc(320, 200, 100+ size, 100+size, radians(0),radians(180) );
+ // };
+};
