@@ -52,3 +52,49 @@ void drawLips() {
   line(30, 75, 270, 75);
   
 };
+//Nose for face__________________________
+//https://drive.google.com/file/d/1y9g5D2iz3Xw7yUPIF0UqG8knleTqL1va/view?usp=sharing
+void setup() {
+  size(640, 480);
+  //line(100,300,100,100);
+  //line(150,300,150,100);
+};
+
+void draw() {
+
+  leftNostril();
+  rightNostril();
+  noseTip();
+};
+
+void leftNostril() {
+  fill(255, 239, 213);
+  int a= 100;
+  int b= 100;
+  ellipse(a+160, b+85, 40, 50);
+};
+
+void rightNostril() {
+  fill(255, 239, 213);
+  int a= 100;
+  int b= 100;
+  ellipse(a+212, b+85, 40, 50);
+};
+void noseTip() {
+  fill(255, 239, 213);
+  //noStroke();
+  //line(100,300,100,100);
+  //line(150,300,150,100);
+  //quad(100,100,150,200,200,200,250,100); //150,200
+  //quad(50,50,75,100,100,100,125,50);
+  int a= 50;
+  int b= 50 ;
+  int c= 75;
+  int d=100;
+  int e=100;
+  int f= 100;
+  int g= 125;
+  int h= 50;
+
+  quad(a+200, b+100, c+200, d+100, e+200, f+100, g+200, h+100);
+};
