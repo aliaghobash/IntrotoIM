@@ -1,3 +1,4 @@
+//Version 1_________________________________________________________________________
 //click and get circles 
 boolean drawCircles = false;
 void setup() {
@@ -21,3 +22,30 @@ void drawFiveCircles() {
     ellipse(i*200, height/2, 50, 50);
   };
 };
+//Version 2________________________________________________
+//https://drive.google.com/file/d/1R0NTxiKtBsrT_nNBtGyBzmT7O2lP-Yyu/view?usp=sharing
+boolean drawCircles = false;
+void setup() {
+  size(1280, 720);
+};
+void draw() {
+  fill(255, 0, 0);
+  //noStroke();
+  rect(0, 0, width, height);
+  drawCircles(25);
+  //if (drawCircles ==true) {
+  // drawCircles();
+  //};
+};
+void mousePressed() {
+  println("mouse pressed");
+  drawCircles = !drawCircles;
+};
+void drawCircles(int howManyCircles) {
+  for (int i=0; i<howManyCircles; i++) {
+   float spacing = width/howManyCircles;
+    ellipse(i*spacing, height/2, 50, 50);
+  };
+};
+//Version 3___________________________________________________
+
