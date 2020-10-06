@@ -1,0 +1,56 @@
+int y;
+float x=0;
+int speed =5;
+
+void setup() {
+  size(600, 600);
+};
+
+void draw() {
+  grid();
+  //println(mouseX);
+  beginShape();
+  stroke(150);
+  line(200, 400, 0, 600);
+  line(400, 400, 600, 600);
+  line(200, 400, 400, 400);
+  endShape();
+
+  beginShape();
+  stroke(0);
+  //line(200,400,200,0);
+  vertex(200, 400);
+  vertex(0, 600);
+  vertex(0, 600);
+  //vertex(600,0);
+  vertex(0, 0); 
+  vertex(200, 400);
+  endShape();
+
+  //   beginShape();
+  //line(400,400,400,0);
+  //  endShape();
+};
+void grid() {
+  background(100);
+y+=speed;
+  for (int i= 0; i<width; i+=50){
+  //for (int y=0; y<width; y+=250){
+//try to make a transformation for the hex to be 
+beginShape();
+//rotateY(PI/8);
+vertex(i+50/2,50/2+y);
+vertex(i+87.5/2,25/2+y);
+vertex(i+125/2,50/2+y);
+vertex(i+125/2,100/2+y);
+vertex(i+87.5/2,125/2+y);
+vertex(i+50/2,100/2+y);
+vertex(i+50/2,50/2+y);
+vertex(i+50/2,100/2+y);
+endShape();
+//};
+};
+ if (y>height) {
+    y=-1;
+  };
+};
