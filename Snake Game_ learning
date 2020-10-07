@@ -1,0 +1,26 @@
+
+float x = width/6;
+float y = height/6;
+// Click within the image to change 
+// the value of the rectangle
+void setup() {
+  size(600, 600);
+  ellipseMode(CENTER);
+};
+void draw() {
+
+  if (mousePressed == true) {
+    background(100);
+    fill(0);
+    x+=1;
+    //} else {
+    //  fill(255);
+  }
+  //rect(25, 25, 50, 50);
+  rect(x, y, 100, 100);
+  if (keyPressed == true) {
+    
+    fill(255);
+    y+=1;
+  };
+}
