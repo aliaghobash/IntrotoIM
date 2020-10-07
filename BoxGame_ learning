@@ -1,0 +1,71 @@
+//Version 1____________________________________________________________
+float x = width/6;
+float y = height/6;
+// Click within the image to change 
+// the value of the rectangle
+void setup() {
+  size(600, 600);
+  ellipseMode(CENTER);
+};
+void draw() {
+
+  if (mousePressed == true) {
+    background(100);
+    fill(0);
+    x+=1;
+    //} else {
+    //  fill(255);
+  }
+  //rect(25, 25, 50, 50);
+  rect(x, y, 100, 100);
+  if (keyPressed == true) {
+    
+    fill(255);
+    y+=1;
+  };
+}
+//Version 2__________________________________________________
+
+float x = width/6;
+float y = height/6;
+// Click within the image to change 
+// the value of the rectangle
+void setup() {
+  background(#FFA500);
+  size(600, 600);
+  ellipseMode(CENTER);
+};
+void draw() {
+   keyPressed() ;
+
+  if (mousePressed == true) {
+    //background(100);
+    fill(0);
+    x+=1;
+
+    //} else {
+    //  fill(255);
+  }
+  //rect(25, 25, 50, 50);
+  rect(x, y, 100, 100); //rect(x+random(-1, 1), y, 100, 100);
+  if (keyPressed == true) {
+    //background(100);
+    fill(255);
+    y+=1;
+  };
+
+};
+
+
+
+  void keyPressed() {
+    if(key == 's'){ 
+    rect(x+100, y+100, 100, 100);
+    
+  };
+   if(key == 's'){ 
+    rect(x+200, y+200, 100, 100);
+    
+  };
+
+  };
