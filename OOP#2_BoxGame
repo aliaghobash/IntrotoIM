@@ -1,0 +1,67 @@
+Box b;
+void setup() {
+  size(600, 600);
+  b= new Box();
+};
+void draw() {
+  background(#FFA500);
+  b.display();
+  b.moveRight();
+  b.moveLeft();
+  b.leftWall();
+  b.move();
+  b.duplicate();
+  b.mirror();
+  //b.rightWall():
+  //b.bounceEdge();
+}
+//__________________
+class Box {
+  float x = width/6;
+  float y = height/6;
+  float xspeed=5;
+
+  void  display() {
+    rect(x, y, 100, 100);
+  };
+  void moveRight() {
+    if (keyPressed == true) {
+      fill(255);
+      x+=1;
+    };
+  };
+  void moveLeft() {
+    if (keyPressed == false) {
+      fill(255);
+
+      x-=1;
+    };
+  };
+  void leftWall() { //will rest at the edge
+    if (x>width||x<0) {
+      x=x*-0.1;
+    };
+  };
+  //void rightWall() {
+  //    if (y>width||x<0) {
+  //    y=y*0.1;
+  //  };
+  void move() {
+    if (keyPressed == true) {
+      //background(100);
+      fill(255);
+      y+=1;
+    };
+  }
+  void duplicate() {
+
+    if (key == 's') { 
+      rect(x+100, y+100, 100, 100);
+    };
+    if (key == 's') { 
+      rect(x+200, y+200, 100, 100);
+    };
+  };
+  void mirror() {
+  };
+}
