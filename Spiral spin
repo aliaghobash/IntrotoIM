@@ -1,0 +1,28 @@
+float angle;
+
+float x;
+float y;
+void setup() {
+  size(600, 600);
+  noFill();
+}
+
+void draw() {
+   background(255);
+
+  int hundred=100;
+   rotate(angle);
+  for (int i=0; i<700; i+=100)
+ 
+  { 
+    translate(x, y);
+    x=0;
+    y=0;
+   
+    strokeWeight(20);
+   ;
+    arc(height/2, width/2, hundred+i, hundred+i, radians(180), radians(360) );
+    arc(height/2-25, width/2, hundred*1.5+i, hundred*1.5+i, radians(0), radians(180));
+  }
+ angle=angle+0.1;
+};
